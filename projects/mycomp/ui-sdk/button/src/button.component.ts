@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '@mycomp/ui-sdk/i18n';
 
 @Component({
-  selector: 'lib-button',
+  selector: 'custom-button',
   standalone: true,
   imports: [CommonModule, TranslatePipe],
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css'],
+  styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
   @Input()

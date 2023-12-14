@@ -1,0 +1,13 @@
+<div class="w-full rounded overflow-hidden shadow-lg flex flex-row">
+    <div  (click)="onItemClick($event, item, i)" *ngFor="let item of summaryjson;  let i = index"
+        class="border cursor-pointer  border-solid w-[15%] h-[150px]  border-gray-400  
+     lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 m-4 flex flex-col justify-center align-middle leading-normal">
+        <div  class=" flex  justify-center  align-middle">
+            <label class="text-4xl">{{item.count}}</label><br />
+        </div>
+        <div  class=" flex  justify-center  align-middle">
+            <label class="text-3xl {{item.color}}">{{item.status}}</label>
+        </div>
+    </div>
+
+</div>
